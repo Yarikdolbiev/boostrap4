@@ -1,0 +1,75 @@
+.jumbotron {
+  background-color: #185899;
+  background-image: url(./images/rio1.jpg);
+  background-position: center 0px;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #ffffff;
+  padding: 200px 0;
+
+}
+
+#totop {
+  position: fixed;
+  bottom: 40px;
+  left: 40px;
+  padding: 0px 0 15px 7px;
+  width: 50px;
+  height: 50px;
+  background-color: #185899;
+  border-radius: 55%;
+  font-size: 40px;
+  color: #fff;
+  z-index: 9999;
+  opacity: 0;
+}
+._anim-show{
+  transform: translate(0px,120%);
+  opacity: 0;
+  transition: all 0,8s ease 0s;
+}
+
+/* Изменение свойства opacity от 0% до 100% при прокрутке элементов по оси X */
+.slideanim {
+  visibility: hidden;
+}
+.slide {
+  animation-name: slide;
+  animation-duration: 1s;
+  visibility: visible;
+}
+
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+
+.fa-facebook{
+  color: #3b5998;
+}
+.fa-instagram{
+  color: #517fa4;
+}
+.fa-youtube{
+  color: #b00
+}
+.fa-twitter{
+  color: #00aced;
+}
+
+.fa-facebook:hover ,.fa-instagram:hover,.fa-youtube:hover,.fa-twitter:hover{
+  color: #ccc;
+}
+
+footer {
+  background-color: #3f3f3f;
+  padding-top: 50px;
+}
